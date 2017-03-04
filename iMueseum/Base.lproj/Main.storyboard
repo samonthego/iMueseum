@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GWa-2f-b0R">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iMueseum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,111 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHV-44-bEt">
+                                <rect key="frame" x="16" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="153" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-bI-rTb">
+                                <rect key="frame" x="0.0" y="101" width="375" height="566"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="153" id="Z5D-JC-3yl" customClass="ThisMuseum" customModule="iMueseum">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="153"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5D-JC-3yl" id="9BY-Ji-9PX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location_1_city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oN8-hN-JQ5">
+                                                    <rect key="frame" x="8" y="94" width="108" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location_1_StateZip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdu-UB-XhT">
+                                                    <rect key="frame" x="8" y="123" width="146" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL5-iD-JWC">
+                                                    <rect key="frame" x="8" y="8" width="66" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location_1_address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJA-E3-MAi">
+                                                    <rect key="frame" x="8" y="66" width="142" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hJA-E3-MAi" firstAttribute="top" secondItem="oL5-iD-JWC" secondAttribute="bottom" constant="37" id="0c5-0c-bjb"/>
+                                                <constraint firstItem="mdu-UB-XhT" firstAttribute="leading" secondItem="9BY-Ji-9PX" secondAttribute="leadingMargin" id="7z3-F4-FlH"/>
+                                                <constraint firstItem="oN8-hN-JQ5" firstAttribute="leading" secondItem="9BY-Ji-9PX" secondAttribute="leadingMargin" id="I8u-Il-mtA"/>
+                                                <constraint firstItem="oL5-iD-JWC" firstAttribute="top" secondItem="9BY-Ji-9PX" secondAttribute="topMargin" id="LWR-DI-2RS"/>
+                                                <constraint firstItem="hJA-E3-MAi" firstAttribute="leading" secondItem="9BY-Ji-9PX" secondAttribute="leading" constant="8" id="RLM-DJ-BiQ"/>
+                                                <constraint firstItem="oL5-iD-JWC" firstAttribute="leading" secondItem="9BY-Ji-9PX" secondAttribute="leadingMargin" id="TrQ-DX-Jcv"/>
+                                                <constraint firstItem="mdu-UB-XhT" firstAttribute="top" secondItem="oN8-hN-JQ5" secondAttribute="bottom" constant="8" id="hmw-ik-q6s"/>
+                                                <constraint firstItem="oN8-hN-JQ5" firstAttribute="top" secondItem="hJA-E3-MAi" secondAttribute="bottom" constant="7" id="xsH-5o-LsW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="showAddress" destination="hJA-E3-MAi" id="U2W-9s-p3x"/>
+                                            <outlet property="showCity" destination="oN8-hN-JQ5" id="sON-kw-3lD"/>
+                                            <outlet property="showMuseum" destination="oL5-iD-JWC" id="fXM-fR-v2I"/>
+                                            <outlet property="showStateZip" destination="mdu-UB-XhT" id="JnJ-07-1aw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oBO-W5-6XZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uvD-km-X5v"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PHV-44-bEt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8M1-uX-OeW"/>
+                            <constraint firstAttribute="trailing" secondItem="IbE-bI-rTb" secondAttribute="trailing" id="HHL-UG-Knz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IbE-bI-rTb" secondAttribute="bottom" id="JeW-PU-7FK"/>
+                            <constraint firstItem="IbE-bI-rTb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="agG-n8-s06"/>
+                            <constraint firstItem="IbE-bI-rTb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hJ4-qX-RZ8"/>
+                            <constraint firstItem="PHV-44-bEt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v8w-KK-SDL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="MX7-n7-gA6"/>
+                    <connections>
+                        <outlet property="networkStatusLabel" destination="PHV-44-bEt" id="3tk-bL-gVg"/>
+                        <outlet property="tableView" destination="IbE-bI-rTb" id="OsX-2g-Fbb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1217.5" y="85.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9S3-OW-rAl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GWa-2f-b0R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Vd-K2-oXx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ENx-iK-7Uh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wk2-vw-2XC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>

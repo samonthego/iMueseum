@@ -12,6 +12,8 @@
 		F597B7851E515B11001E431E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F597B7831E515B11001E431E /* Main.storyboard */; };
 		F597B7871E515B11001E431E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F597B7861E515B11001E431E /* Assets.xcassets */; };
 		F597B78A1E515B11001E431E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F597B7881E515B11001E431E /* LaunchScreen.storyboard */; };
+		F597B7941E515D3E001E431E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F597B7931E515D3E001E431E /* Reachability.swift */; };
+		F5CFB39F1E61FA99006E28E5 /* thisMuseum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFB39E1E61FA99006E28E5 /* thisMuseum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F597B7861E515B11001E431E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F597B7891E515B11001E431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F597B78B1E515B11001E431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F597B7931E515D3E001E431E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F5CFB39E1E61FA99006E28E5 /* thisMuseum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thisMuseum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				F597B77F1E515B11001E431E /* AppDelegate.swift */,
+				F597B7931E515D3E001E431E /* Reachability.swift */,
 				F597B7811E515B11001E431E /* ViewController.swift */,
 				F597B7831E515B11001E431E /* Main.storyboard */,
 				F597B7861E515B11001E431E /* Assets.xcassets */,
 				F597B7881E515B11001E431E /* LaunchScreen.storyboard */,
 				F597B78B1E515B11001E431E /* Info.plist */,
+				F5CFB39E1E61FA99006E28E5 /* thisMuseum.swift */,
 			);
 			path = iMueseum;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				F597B7821E515B11001E431E /* ViewController.swift in Sources */,
 				F597B7801E515B11001E431E /* AppDelegate.swift in Sources */,
+				F597B7941E515D3E001E431E /* Reachability.swift in Sources */,
+				F5CFB39F1E61FA99006E28E5 /* thisMuseum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				F597B7901E515B11001E431E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
